@@ -24,13 +24,16 @@ class BooksApp extends Component {
   }
 
   render() {
-      // console.log(this.state.books);
-      // this.state.books.forEach(function(book) {
-      //     console.log("title: " + book.title, "\nshelf: " + book.shelf);
-      // });
+      {/*console.log(this.state.books);
+      this.state.books.forEach(function(book) {
+          console.log("title: " + book.title, "\nshelf: " + book.shelf);
+      });*/}
 
 return(
-    <div>
+    <div className="list-books">
+        <div className="list-books-title">
+          <h1>MyReads</h1>
+        </div>
         <BookShelf books={this.state.books}/>
     </div>
 )
